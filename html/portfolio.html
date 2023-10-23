@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../index.css" />
+    <script src="../index.js"></script>
+    <title>Image Gallery</title>
+</head>
+
+<body class="body">
+    <!-- Heading Name -->
+    <div class="heading">
+        <h1>Photo Gallery</h1>
+    </div>
+    <!-- Image Gallery section all image in one div -->
+    <div class="gallery">
+        <img src="../assets/living_room2-1.jpg" alt="Image 2" class="gallery-img" onclick="showImage(src)" />
+        <img src="../assets/living_room2-2.jpg" alt="Image 3" class="gallery-img" onclick="showImage(src)" />
+        <img src="../assets/living_room2-3.jpg" alt="Image 4" class="gallery-img" onclick="showImage(src)" />
+        <img src="../assets/living_room2-4.jpg" alt="Image 5" class="gallery-img" onclick="showImage(src)" />
+        <img src="../assets/living_room2-5.jpg" alt="Image 6" class="gallery-img" onclick="showImage(src)" />
+    </div>
+
+    <!-- Image containter where image will show in big size -->
+    <div class="image-popup-container" id="imagePopup">
+        <span class="close-button" onclick="closeImage()">×</span>
+        <img src="" alt="Popup Image" id="popupImage" />
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
