@@ -160,13 +160,62 @@ at middle of screen */
     height: 250px;
   }
 
+  .img2 {
+    width: 70%;
+    height: auto;
+    margin-top: 10px;
+    margin-left: 30px;
+  }
+
   .float-child {
-    /* border-style: solid;
-      border-color: blue; */
     width: 80%;
     float: left;
-    /* padding: 30px; */
     color:black;
+}
+ /* About */
+ .grid-container-element { 
+  display: grid; 
+  grid-template-columns: 1fr 1fr; 
+  grid-gap: 20px; 
+  width: auto; 
+} 
+.grid-child-element { 
+  margin: 10px; 
+}
+
+.about {
+  font-family: futura-pt;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 19px;
+    letter-spacing: .02em;
+    line-height: 1.6em;
+    text-transform: none;
+    color: rgba(0,0,0,.6);
+}
+
+.ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  /* background-color: #333; */
+}
+
+.li {
+  float: left;
+}
+
+.li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.li a:hover {
+  background-color: silver;
 }
   }
 
@@ -174,9 +223,8 @@ at middle of screen */
   /* About */
   .grid-container-element { 
     display: grid; 
-    grid-template-columns: 1fr 1fr; 
-    grid-gap: 20px; 
-    /* border: 1px solid black;  */
+    grid-template-columns: 50% 50%; 
+    grid-gap: 0px; 
     width: auto; 
 } 
 .grid-child-element { 
