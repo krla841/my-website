@@ -72,15 +72,15 @@ body {
     width: 90%;
     margin:0 auto;
     display:grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 50px;
     justify-content:center;
     align-items: center; 
   }
  
   /* Styling Particular Image */
   .gallery-img {
-    width: 200px;
+    width: 300px;
     height: 200px;
     cursor: pointer;
     transition: transform 0.2s;
@@ -131,11 +131,11 @@ at middle of screen */
   /* On screens that are 670px or less, set the background color to blue */
   @media (max-width:670px) {
     .gallery{
-        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+        grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
         grid-gap: 10px;
     }
     .gallery-img{
-        width:150px;
+        width:160px;
         height: 150px;
     }
  
@@ -194,13 +194,6 @@ at middle of screen */
     color: rgba(0,0,0,.6);
 }
 
-.ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  /* background-color: #333; */
-}
 
 .li {
   float: left;
