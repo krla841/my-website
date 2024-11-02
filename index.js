@@ -37,6 +37,21 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 });
 
+document.addEventListener("DOMContentLoaded", () => {
+    const img = document.querySelector(".img.blur-loading");
+
+    // Create a new image element to load the full-resolution image in the background
+    const highResImage = new Image();
+    highResImage.src = img.getAttribute("data-src");
+
+    highResImage.onload = () => {
+        img.src = highResImage.src; // Update the source to high-res image
+        img.classList.remove("blur-loading"); // Remove blur
+        img.classList.add("loaded"); // Trigger CSS transition to remove blur
+    };
+});
+
+
 function allImagesLoaded() {
     document.body.classList.add("gallery-loaded"); // Show gallery
     document.body.classList.add("preloader-hidden"); // Hide preloader
