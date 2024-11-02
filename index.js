@@ -37,6 +37,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 });
 
+
 function allImagesLoaded() {
     document.body.classList.add("gallery-loaded"); // Show gallery
     document.body.classList.add("preloader-hidden"); // Hide preloader
