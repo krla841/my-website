@@ -307,3 +307,14 @@ at middle of screen */
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
 }
+
+
+.img.blur-loading {
+  filter: blur(10px);
+  transition: filter 0.3s ease;
+}
+
+.img.loaded {
+  filter: blur(0);
+}
+
